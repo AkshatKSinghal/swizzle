@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		AC55A7881AC84AE20036ACC1 /* SwizzleUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AC55A7891AC84AE20036ACC1 /* Build configuration list for PBXAggregateTarget "SwizzleUniversal" */;
+			buildPhases = (
+				AC55A78C1AC84AF40036ACC1 /* ShellScript */,
+				AC55A78D1AC84B000036ACC1 /* ShellScript */,
+				AC55A7901AC84C070036ACC1 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = SwizzleUniversal;
+			productName = SwizzleUniversal;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		AC55A7611AC847600036ACC1 /* Swizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC55A7601AC847600036ACC1 /* Swizzle.h */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AC55A7631AC847600036ACC1 /* Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = AC55A7621AC847600036ACC1 /* Swizzle.m */; };
+		AC55A7691AC847600036ACC1 /* libSwizzle.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AC55A75D1AC847600036ACC1 /* libSwizzle.a */; };
+		AC55A77B1AC847A10036ACC1 /* UIViewController+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = AC55A7771AC847A10036ACC1 /* UIViewController+Swizzle.m */; };
+		AC55A77C1AC847A10036ACC1 /* UIResponder+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = AC55A7791AC847A10036ACC1 /* UIResponder+Swizzle.m */; };
+		AC55A78E1AC84BAA0036ACC1 /* UIViewController+Swizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC55A7781AC847A10036ACC1 /* UIViewController+Swizzle.h */; };
+		AC55A78F1AC84BB00036ACC1 /* UIResponder+Swizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC55A77A1AC847A10036ACC1 /* UIResponder+Swizzle.h */; };
+		AC55A7911AC84C150036ACC1 /* Swizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC55A7601AC847600036ACC1 /* Swizzle.h */; };
+		AC55A7921AC84C170036ACC1 /* UIViewController+Swizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC55A7781AC847A10036ACC1 /* UIViewController+Swizzle.h */; };
+		AC55A7931AC84C1D0036ACC1 /* UIResponder+Swizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC55A77A1AC847A10036ACC1 /* UIResponder+Swizzle.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC55A76A1AC847600036ACC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC55A7551AC847600036ACC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC55A75C1AC847600036ACC1;
+			remoteInfo = Swizzle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC55A75B1AC847600036ACC1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				AC55A7611AC847600036ACC1 /* Swizzle.h in CopyFiles */,
+				AC55A78E1AC84BAA0036ACC1 /* UIViewController+Swizzle.h in CopyFiles */,
+				AC55A78F1AC84BB00036ACC1 /* UIResponder+Swizzle.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC55A7901AC84C070036ACC1 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${BUILD_DIR}/${CONFIGURATION}-universal/${PROJECT_NAME}.framework/Versions/A/Headers";
+			dstSubfolderSpec = 0;
+			files = (
+				AC55A7911AC84C150036ACC1 /* Swizzle.h in CopyFiles */,
+				AC55A7921AC84C170036ACC1 /* UIViewController+Swizzle.h in CopyFiles */,
+				AC55A7931AC84C1D0036ACC1 /* UIResponder+Swizzle.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC55A75D1AC847600036ACC1 /* libSwizzle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwizzle.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC55A7601AC847600036ACC1 /* Swizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Swizzle.h; sourceTree = "<group>"; };
+		AC55A7621AC847600036ACC1 /* Swizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Swizzle.m; sourceTree = "<group>"; };
+		AC55A7681AC847600036ACC1 /* SwizzleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwizzleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC55A76E1AC847600036ACC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC55A7771AC847A10036ACC1 /* UIViewController+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzle.m"; sourceTree = "<group>"; };
+		AC55A7781AC847A10036ACC1 /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
+		AC55A7791AC847A10036ACC1 /* UIResponder+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Swizzle.m"; sourceTree = "<group>"; };
+		AC55A77A1AC847A10036ACC1 /* UIResponder+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Swizzle.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC55A75A1AC847600036ACC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC55A7651AC847600036ACC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC55A7691AC847600036ACC1 /* libSwizzle.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC55A7541AC847600036ACC1 = {
+			isa = PBXGroup;
+			children = (
+				AC55A75F1AC847600036ACC1 /* Swizzle */,
+				AC55A76C1AC847600036ACC1 /* SwizzleTests */,
+				AC55A75E1AC847600036ACC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC55A75E1AC847600036ACC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC55A75D1AC847600036ACC1 /* libSwizzle.a */,
+				AC55A7681AC847600036ACC1 /* SwizzleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC55A75F1AC847600036ACC1 /* Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				AC55A7601AC847600036ACC1 /* Swizzle.h */,
+				AC55A7621AC847600036ACC1 /* Swizzle.m */,
+				AC55A7781AC847A10036ACC1 /* UIViewController+Swizzle.h */,
+				AC55A7771AC847A10036ACC1 /* UIViewController+Swizzle.m */,
+				AC55A7791AC847A10036ACC1 /* UIResponder+Swizzle.m */,
+				AC55A77A1AC847A10036ACC1 /* UIResponder+Swizzle.h */,
+			);
+			path = Swizzle;
+			sourceTree = "<group>";
+		};
+		AC55A76C1AC847600036ACC1 /* SwizzleTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC55A76D1AC847600036ACC1 /* Supporting Files */,
+			);
+			path = SwizzleTests;
+			sourceTree = "<group>";
+		};
+		AC55A76D1AC847600036ACC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC55A76E1AC847600036ACC1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC55A75C1AC847600036ACC1 /* Swizzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC55A7711AC847600036ACC1 /* Build configuration list for PBXNativeTarget "Swizzle" */;
+			buildPhases = (
+				AC55A7591AC847600036ACC1 /* Sources */,
+				AC55A75A1AC847600036ACC1 /* Frameworks */,
+				AC55A75B1AC847600036ACC1 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swizzle;
+			productName = Swizzle;
+			productReference = AC55A75D1AC847600036ACC1 /* libSwizzle.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AC55A7671AC847600036ACC1 /* SwizzleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC55A7741AC847600036ACC1 /* Build configuration list for PBXNativeTarget "SwizzleTests" */;
+			buildPhases = (
+				AC55A7641AC847600036ACC1 /* Sources */,
+				AC55A7651AC847600036ACC1 /* Frameworks */,
+				AC55A7661AC847600036ACC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC55A76B1AC847600036ACC1 /* PBXTargetDependency */,
+			);
+			name = SwizzleTests;
+			productName = SwizzleTests;
+			productReference = AC55A7681AC847600036ACC1 /* SwizzleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC55A7551AC847600036ACC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "New ventures";
+				TargetAttributes = {
+					AC55A75C1AC847600036ACC1 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					AC55A7671AC847600036ACC1 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					AC55A7881AC84AE20036ACC1 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = AC55A7581AC847600036ACC1 /* Build configuration list for PBXProject "Swizzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AC55A7541AC847600036ACC1;
+			productRefGroup = AC55A75E1AC847600036ACC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC55A75C1AC847600036ACC1 /* Swizzle */,
+				AC55A7671AC847600036ACC1 /* SwizzleTests */,
+				AC55A7881AC84AE20036ACC1 /* SwizzleUniversal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC55A7661AC847600036ACC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AC55A78C1AC84AF40036ACC1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "codebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphonesimulator -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphonesimulator\n\nxcodebuild -project ${PROJECT_NAME}.xcodeproj -sdk iphoneos -target ${PROJECT_NAME} -configuration ${CONFIGURATION} clean build CONFIGURATION_BUILD_DIR=${BUILD_DIR}/${CONFIGURATION}-iphoneos";
+		};
+		AC55A78D1AC84B000036ACC1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "SIMULATOR_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\" &&\nDEVICE_LIBRARY_PATH=\"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" &&\nUNIVERSAL_LIBRARY_DIR=\"${BUILD_DIR}/${CONFIGURATION}-universal\" &&\nUNIVERSAL_LIBRARY=\"lib${PROJECT_NAME}.a\"\nUNIVERSAL_LIBRARY_PATH=\"${UNIVERSAL_LIBRARY_DIR}/${UNIVERSAL_LIBRARY}\" &&\nFRAMEWORK=\"${UNIVERSAL_LIBRARY_DIR}/${PROJECT_NAME}.framework\" &&\n\n# Create framework directory structure.\nrm -rf \"${FRAMEWORK}\" &&\nmkdir -p \"${UNIVERSAL_LIBRARY_DIR}\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Headers\" &&\nmkdir -p \"${FRAMEWORK}/Versions/A/Resources\" &&\n\n# Generate universal binary for the device and simulator.\nlipo \"${SIMULATOR_LIBRARY_PATH}\" \"${DEVICE_LIBRARY_PATH}\" -create -output \"${UNIVERSAL_LIBRARY_PATH}\" &&\n\n# Move files to appropriate locations in framework paths.\nmv \"${UNIVERSAL_LIBRARY_PATH}\" \"${FRAMEWORK}/Versions/A\" &&\nln -s \"A\" \"${FRAMEWORK}/Versions/Current\" &&\nln -s \"Versions/Current/Headers\" \"${FRAMEWORK}/Headers\" &&\nln -s \"Versions/Current/Resources\" \"${FRAMEWORK}/Resources\" &&\nln -s \"Versions/Current/${UNIVERSAL_LIBRARY}\" \"${FRAMEWORK}/${PROJECT_NAME}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC55A7591AC847600036ACC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC55A7631AC847600036ACC1 /* Swizzle.m in Sources */,
+				AC55A77B1AC847A10036ACC1 /* UIViewController+Swizzle.m in Sources */,
+				AC55A77C1AC847A10036ACC1 /* UIResponder+Swizzle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC55A7641AC847600036ACC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC55A76B1AC847600036ACC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC55A75C1AC847600036ACC1 /* Swizzle */;
+			targetProxy = AC55A76A1AC847600036ACC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC55A76F1AC847600036ACC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC55A7701AC847600036ACC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC55A7721AC847600036ACC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AC55A7731AC847600036ACC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		AC55A7751AC847600036ACC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwizzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC55A7761AC847600036ACC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SwizzleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC55A78A1AC84AE20036ACC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC55A78B1AC84AE20036ACC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC55A7581AC847600036ACC1 /* Build configuration list for PBXProject "Swizzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC55A76F1AC847600036ACC1 /* Debug */,
+				AC55A7701AC847600036ACC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC55A7711AC847600036ACC1 /* Build configuration list for PBXNativeTarget "Swizzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC55A7721AC847600036ACC1 /* Debug */,
+				AC55A7731AC847600036ACC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC55A7741AC847600036ACC1 /* Build configuration list for PBXNativeTarget "SwizzleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC55A7751AC847600036ACC1 /* Debug */,
+				AC55A7761AC847600036ACC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC55A7891AC84AE20036ACC1 /* Build configuration list for PBXAggregateTarget "SwizzleUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC55A78A1AC84AE20036ACC1 /* Debug */,
+				AC55A78B1AC84AE20036ACC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC55A7551AC847600036ACC1 /* Project object */;
+}
