@@ -33,6 +33,7 @@
 		AC55A7911AC84C150036ACC1 /* Swizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC55A7601AC847600036ACC1 /* Swizzle.h */; };
 		AC55A7921AC84C170036ACC1 /* UIViewController+Swizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC55A7781AC847A10036ACC1 /* UIViewController+Swizzle.h */; };
 		AC55A7931AC84C1D0036ACC1 /* UIResponder+Swizzle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = AC55A77A1AC847A10036ACC1 /* UIResponder+Swizzle.h */; };
+		AC55A7A41AC9A4A40036ACC1 /* UIGestureRecognizer+Swizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = AC55A7A31AC9A4A40036ACC1 /* UIGestureRecognizer+Swizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,8 @@
 		AC55A7781AC847A10036ACC1 /* UIViewController+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzle.h"; sourceTree = "<group>"; };
 		AC55A7791AC847A10036ACC1 /* UIResponder+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+Swizzle.m"; sourceTree = "<group>"; };
 		AC55A77A1AC847A10036ACC1 /* UIResponder+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+Swizzle.h"; sourceTree = "<group>"; };
+		AC55A7A21AC9A4A40036ACC1 /* UIGestureRecognizer+Swizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Swizzle.h"; sourceTree = "<group>"; };
+		AC55A7A31AC9A4A40036ACC1 /* UIGestureRecognizer+Swizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Swizzle.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				AC55A7771AC847A10036ACC1 /* UIViewController+Swizzle.m */,
 				AC55A7791AC847A10036ACC1 /* UIResponder+Swizzle.m */,
 				AC55A77A1AC847A10036ACC1 /* UIResponder+Swizzle.h */,
+				AC55A7A21AC9A4A40036ACC1 /* UIGestureRecognizer+Swizzle.h */,
+				AC55A7A31AC9A4A40036ACC1 /* UIGestureRecognizer+Swizzle.m */,
 			);
 			path = Swizzle;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC55A7A41AC9A4A40036ACC1 /* UIGestureRecognizer+Swizzle.m in Sources */,
 				AC55A7631AC847600036ACC1 /* Swizzle.m in Sources */,
 				AC55A77B1AC847A10036ACC1 /* UIViewController+Swizzle.m in Sources */,
 				AC55A77C1AC847A10036ACC1 /* UIResponder+Swizzle.m in Sources */,

@@ -25,21 +25,10 @@
 
 
 - (UITapGestureRecognizer *)tapGesture {
-    return [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTapped:)];
+    return [[UITapGestureRecognizer alloc] initWithTarget:nil action:nil];
 }
 
 
-- (void)viewTapped:(UITapGestureRecognizer *)gestureRecogniser {
-    CGPoint location = [gestureRecogniser locationInView:gestureRecogniser.view];
-    UIView *touchedView = [Swizzle viewTappedInsideView:self.view AtPoint:location];
-    if ([touchedView respondsToSelector:@selector(text)]) {
-        [[[UIAlertView alloc] initWithTitle:@"TOUCH EVENT"
-                                    message:[touchedView performSelector:@selector(text)]
-                                   delegate:self
-                          cancelButtonTitle:@"OK"
-                          otherButtonTitles: nil] show];
-    }
-}
 
 
 @end
